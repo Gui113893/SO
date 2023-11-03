@@ -7,7 +7,9 @@ int main(int argc, char **argv)
     int i, numChars;
     char *username;
 
-    username = getenv("USER");
+    //In terminal -> export NEWUSER="your_username"
+
+    username = getenv("NEWUSER");
     if(username != NULL)
     {
         printf("This program is being executed by %s\n", username);
