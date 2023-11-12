@@ -4,7 +4,7 @@ def tes1():
 
 def tes2():
     # Path: test.py
-    ...
+    print("Test2")
 
 
 def main():
