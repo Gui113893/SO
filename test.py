@@ -1,10 +1,10 @@
 def tes1():
     # Path: test.py
-    ...
+    print("Test1")
 
 def tes2():
     # Path: test.py
-    ...
+    print("Test2")
 
 
 def main():
