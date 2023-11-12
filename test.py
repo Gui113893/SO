@@ -1,6 +1,6 @@
 def tes1():
     # Path: test.py
-    ...
+    print('tes1')
 
 def tes2():
     # Path: test.py
