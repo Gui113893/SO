@@ -10,7 +10,16 @@
 int main(int argc, char *argv[])
 {
     char text[1024];
-    
+    FILE *fp = NULL;
+    FILE *datePipe;
+    char date[64];
+
+    fp = fopen("command.log", "a+");
+    if(fp == NULL) {
+        printf("Error opening file.\n");
+        exit(EXIT_FAILURE);
+    }
+
     do
     {
         printf("Command: ");
@@ -21,10 +30,15 @@ int main(int argc, char *argv[])
             completed.
         */
         if(strcmp(text, "end")) {
-           printf("\n * Command to be executed: %s\n", text);
-           printf("---------------------------------\n");
-           system(text);
-           printf("---------------------------------\n");
+            datePipe = popen("date +'%Y-%m-%d %H:%M:%S'", "r");
+            fgets(date, sizeof(date), datePipe);
+            pclose(datePipe);
+
+            fprintf(fp, "%-50s | %s", text, date);
+            printf("\n * Command to be executed: %s\n", text);
+            printf("---------------------------------\n");
+            system(text);
+            printf("---------------------------------\n");
         }
     } while(strcmp(text, "end"));
 
