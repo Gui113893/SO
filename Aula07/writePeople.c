@@ -39,11 +39,11 @@ int main (int argc, char *argv[])
         return EXIT_FAILURE;
     }
 
-    /* Write 10 itens on a file */
+    /* Write nPeople itens on a file */
     for(i = 0 ; i < nPeople ; i++)
     {    
         printf("Enter the name of the person: ");
-        scanf("%s", p.name);
+        scanf("%ls", &p.name);
         printf("Enter the age of the person: ");
         scanf("%d", &p.age);
         printf("Enter the height of the person: ");

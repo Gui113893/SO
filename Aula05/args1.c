@@ -8,8 +8,8 @@ int main(int argc, char *argv[])
         printf("Number of Arguments Invalid (Must be 2)\n");
         return EXIT_FAILURE;
     }
-    
 
+ 
     int i;
 
     for(i = 0 ; i < argc ; i++)

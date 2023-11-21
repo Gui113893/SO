@@ -8,7 +8,7 @@
  man fgets
 */
 
-#define LINEMAXSIZE 80 /* or other suitable maximum line size */
+#define LINEMAXSIZE 40 /* or other suitable maximum line size */
 
 
 int main(int argc, char *argv[])
@@ -44,7 +44,6 @@ int main(int argc, char *argv[])
             if (complete)
                 printf("%d -> ", count);
             printf("%s", line);
-
             if (line[strlen(line)-1] != '\n')
                 complete = 0;
             else{
