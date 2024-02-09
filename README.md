@@ -24,5 +24,5 @@ For more information: [SO-Universidade de Aveiro](https://www.ua.pt/pt/uc/12293)
 
 The workspace contains two main projects:
 
-* `SO_Project1_SpaceCheck`: Project that contains scripts for memory management using **bash**. You can access it in an independent repository [here](https://github.com/Gui113893/SO_Project).
-* `SO_Project2_Restaurant`: Project that simulates a restaurant with multithreading using **C**. You can access it too [here](https://github.com/Gui113893/SO_Project2). For more information about how to run this project, read the **Makefile**.
+* `SO_Project1_SpaceCheck`: Project that contains scripts for memory management using **bash**. You can access it in an independent repository [here](https://github.com/Gui113893/SO_Project). (17/20)
+* `SO_Project2_Restaurant`: Project that simulates a restaurant with multithreading using **C**. You can access it too [here](https://github.com/Gui113893/SO_Project2). For more information about how to run this project, read the **Makefile**. (20/20)
